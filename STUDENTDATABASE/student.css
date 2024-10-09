@@ -1,0 +1,143 @@
+/* Reset and general styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Header styling */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #87ceeb, #00bfff);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: #f0f8ff !important;
+}
+
+.navbar-right .btn-primary {
+    background-color: #007bff;
+    border: none;
+    margin-top: 8px;
+}
+
+.navbar-right .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar styling */
+aside {
+    position: fixed;
+    top: 50px; /* Adjusted for navbar height */
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(135deg, #00bfff, #87ceeb);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    color: white;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin: 0;
+}
+
+aside ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+aside ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 30px;
+}
+
+/* Content styling */
+.content {
+    margin-left: 250px;
+    padding: 80px 40px 40px 40px; /* Adjusted padding for navbar */
+    background-color: #ffffff;
+    min-height: 100vh;
+    box-shadow: -1px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    aside {
+        width: 200px;
+    }
+
+    aside ul li a {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .content {
+        margin-left: 200px;
+        padding: 60px 20px 20px 20px;
+    }
+
+    .header .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    aside {
+        width: 180px;
+    }
+
+    aside ul li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .content {
+        margin-left: 180px;
+        padding: 60px 10px 10px 10px;
+    }
+
+    .header .navbar-brand {
+        font-size: 18px;
+    }
+}
