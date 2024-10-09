@@ -1,4 +1,4 @@
-Here's a basic `README.md` template that you can use for your GitHub repository for the student DBMS project. It includes instructions to run the project using XAMPP.
+
 
 ---
 
